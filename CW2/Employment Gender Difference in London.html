@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research on the Employment Gender Difference in London</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://d3js.org/d3.v5.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+	<body>
+         
+        <h1>Research on the Employment Gender Difference in London</h1>
+        <h2>Student Number: 1903489</h2>
+        <h2>Repository: https://github.com/EavanXing0416/7CCSMSDV_Coursework.git</h2>
+
+        <h3>Introduction</h3>
+		<p>Gender differences in employment are a worldwide phenomenon, and London is no exception.
+           It seems that in many cases, women face more difficult employment issues than men.
+           In order to more intuitively show the employment inequality facing by men and women through the data,
+           this project intends to figure out the exact differences in employment rate between males and females in London
+           through different data visualization methods. Inspired by the report of
+           Differences in Employment by Gender in London from London Datastore (2020),
+           this project will also focus on the differences in employment by gender
+           in particular the four aspects shown below:</p>
+        <ul>
+          <li> Gender differences in employment under different kinds of jobs.
+              <a href="./sub_html/industry.html">Click</a>
+          </li>
+          <li> Gender differences in employment of different age groups.
+              <a href="./sub_html/age.html">Click</a>
+          </li>
+          <li> Gender differences in employment under the effect of having children.
+              <a href="./sub_html/children.html">Click</a>
+          </li>
+          <li> Gender differences in employment of different culture backgrounds.
+              <a href="./sub_html/culture.html">Click</a>
+          </li>
+        </ul>
+        <p>This project mainly analyse these four problems related to the main topic, the employment gender difference in London.
+        Under each problem, we adapt different visualization methods to analyse the data based on their own characteristics.
+        You could find individual web-page belong to each of the four problems. Click the link follows the problem to see more in details. </p>
+
+        <h3>Summarize</h3>
+        <p>Based on the data provided by Census Information Scheme (https://data.london.gov.uk/dataset), we obtain the following results:
+        <ul>
+            <li>For the gender differences in employment under different kinds of jobs, we conclude that females are more likely
+                to have jobs in health and social activities and education areas, while males are mostly like to work in construction,
+                transport and storage, and agriculture, energy and water areas. Some of the job fields do not show much difference between
+                different gender, such as public administration and support activities, real estate activities and professional, scientific and technical activities.
+                The results are reasonable and are consistent with our common sense.
+            </li>
+            <li>For the gender differences in employment of different age groups, we conclude that percentage point gap in employment rate
+                between men and women has an in creasing tendency as the age grows, which means women at older age are more likely to suffer
+                unemployment than men at the same age. Also, the gap rate reached a sub-peak at the age around 30, which indicate that women
+                at that age have higher unemployment rate than men, which may caused by giving birth to their first child, and that speculation
+                worth further analysis in the future. We can also find out that the employment rate gap between genders are getting smaller and
+                smaller as time goes,the data in 2011 is lower compared with the data decades ago, which is good to see.</li>
+            <li>For gender differences in employment under the effect of having children, we conclude that
+                women with dependent children were less likely to work than those without dependent children,
+                however, men do not shows much difference, and in some boroughs, men with dependent children were more
+                likely to work, which is an interesting finding. Also, for both men and women, the difference in
+                economic activity rate between with and without dependent children seems to be larger for them who live
+                in center boroughs of London.
+            </li>
+            <li>For gender differences in employment of different culture backgrounds, in this project we focused on
+                the data of percentage point difference in economic activity rate between men and women by ethnicity.
+                From different country of birth, Bangladeshi, Pakistani and Arab are the top three which have the
+                largest gap between males and females, while Chinese, White and Black Caribbean and
+                Caribbean has the smallest economic activity rate gap.
+
+            </li>
+        </ul></p>
+
+        <h3>Interesting Findings</h3>
+        <p>Through this project, there are two interesting findings:</p>
+        <p>The first one is that, through our data, the employment rate or economic activity rate of men are always
+            higher than women no matter through the lens of job areas, age groups or culture backgrounds. As a result,
+            when computing the employment rate gap by using men's value minus women's value, the result is always positive.
+            And that may, to some extent, shows that women are still likely to be negatively affected by gender in employment.
+        </p>
+        <p>The second one is that, when exploring the gender differences in employment under the effect of having children,
+            the result of the male's side is quite interesting. In common sense, it is reasonable for a person to quit his or her job
+            after he or she has a children. However, the result shows that men with dependent children were more likely to work.
+        </p>
+
+        <h3>Strength and Limitation of the Approach</h3>
+        <p>This part are detailed introduced under each problem's own web-page based on different approaches.</p>
+
+        <h3>Conclusions</h3>
+        <p>In this project, we exploring the employment gender difference in London through the four aspects mentioned before.</p>
+        <p> - When analyse the data about the gender differences in employment under different kinds of jobs or culture backgrounds,
+            we implement stacked bar chart to illustrate the difference and percentage of both genders clearly. For the stacked  bar chart,
+            it reflects the proportion of men and women better. In the future, it will be good to think about ways to show the difference more
+            intuitively, for example, implementing a bar chart which shows the difference gap and connect the bar chart with the stacked bar chart
+            by jobs or culture backgrounds.</p>
+        <p> - When analyse the data about the gender differences in employment of different age groups, we use multiple line chart
+            to show how the employment gap between gender varies with the increasing of age. Also the multiple lines representing
+            data of different decades and the multiple line chart may also illustrate the tendency of the gap changes through decades.
+            From the plot, the gap rate reached a sub-peak at the age around 30, which indicate that women at that age have higher
+            unemployment rate than men, which may caused by giving birth to their first child, and that speculation
+            worth further analysis in the future. It would be useful to combine this data with another data which record the age of women when
+            they give birth to their first child.</p>
+        <p>To illustrate the difference in economic activity rate between with and without dependent children by borough for both males and females,
+            we use the choropleth map of the Greater London, coloring each borough by its gap rate between with and without dependent children. In that way
+            we could intuitively get from the picture that for women, it is really common to quit their jobs or stay at an unemployment state after they have
+            a child, while for men, the gap rate is closely to zero. From now, we could only compare result between males and females by two separate choropleth
+            maps using the same color scale. However, in the future, I will try to find some methods to show the difference between gender by borough more intuitively.</p>
+
+        <h3>Reference</h3>
+        <p>[1] Data.london.gov.uk. (2020). Differences in Employment by Gender in London (Report) – London Datastore. [online] Available at: https://data.london.gov.uk/dataset/differences-in- employment-by-gender-in-london-report.</p>
+        <p>[2] Parliament.uk. (2020). Women and the Economy. [online] Available at: https://www.parliament.uk.</p>
+        <p>[3] Stacked Bar Chart (Mike Bostock, 2018)[Online] Available at: https://observablehq.com/@d3/stacked-bar-chart</p>
+        <p>[4] Multiline chart (Robert Pettersson, 2020)[Online] Available at: https://bl.ocks.org/LemoNode/a9dc1a454fdc80ff2a738a9990935e9d</p>
+        <p>[5] d3 mouseover multi-line chart[Online] Available at: https://bl.ocks.org/larsenmtl/e3b8b7c2ca4787f77d78f58d41c3da91</p>
+        <p>[6] Gender Differences in Employment and Why They Matter. (2011). World Development Report 2012, 198–253. doi: 10.1596/9780821388105_ch5</p>
+
+        <div id="industry_stack_bar"></div>
+        <div id="age_line_chart"></div>
+
+        <div id="children_map">
+            <svg width="1500" height="600">
+                <g id="mapLayer"></g>
+                <g id="cityLayer"></g>
+            </svg>
+        </div>
+        
+        <div id="culture_stack_bar"></div>
+        <div id="test"></div>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

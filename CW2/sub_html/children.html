@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gender Differences in Employment Under the Effect of Having Children.</title>
+    <link href="../styles/children.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Gender Differences in Employment under the Effect of Having Children</h1>
+    <p>The conclusion and plots are as follows: </p>
+    <p>For gender differences in employment under the effect of having children, we conclude that
+        women with dependent children were less likely to work than those without dependent children,
+        however, men do not shows much difference, and in some boroughs, men with dependent children were more
+        likely to work, which is an interesting finding. Also, for both men and women, the difference in
+        economic activity rate between with and without dependent children seems to be larger for them who live
+        in center boroughs of London.</p>
+    <p>By using the choropleth map of London, coloring each borough by its gap rate between with and without dependent children. We calculate the
+        gap rate between with and without dependent children by using economic activity rate with children minus without children. The positive value
+        means that people with children are more likely to work or to be employed, while the negative means tha opposite. We also create the color scale
+        to show the data in a more intuitively way. We use red to show the most negative values and blue the most positive values.In that way
+        we could intuitively get from the picture that for women, it is really common to quit their jobs or stay at an unemployment state after they have
+        a child, because the map for women are almost in red color and the color closer to the center is redder. While for men, the gap rate is closely to zero,
+        because the map for men are almost in purple color which indicates the gap rate is around zero. For now, we could only compare result between males and females by two separate choropleth
+        maps using the same color scale, although it could shows the gap rate clearly and intuitively and make reasonable comparisons between males and females, there is still inconvenience for us to get the
+        information of one borough of both genders, because we have to look up into two maps to compare. As a result, in the future, I will try to find some methods to show the difference between gender by borough more intuitively.</p>
+    <h3>Difference in economic activity rate between with and without dependent children by borough</h3>
+    <h2>TOP: women</h2>    <h2>BOTTOM: men</h2>
+    <div id="children_map">
+        <svg width="1200" height="600">
+            <g id="mapLayer"></g>
+            <g id="cityLayer"></g>
+        </svg>
+    </div>
+
+    <div id="colorscale">
+        <svg width="1200" height="160"></svg>
+    </div>
+
+    <div id="children_map2">
+        <svg width="1000" height="600">
+            <g id="mapLayer"></g>
+            <g id="cityLayer"></g>
+        </svg>
+    </div>
+    <a href="../Employment Gender Difference in London.html">Back To Home Page</a>
+</body>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="../scripts/children.js" ></script>
+
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script>
+        var svg = d3.select("#colorscale").select("svg")
+        const linearGradient = svg.append("defs")
+            .append("linearGradient")
+            .attr("id","linearColor")
+            .attr("x1","100%")
+            .attr('y1',"0%")
+            .attr("x2","0%")
+            .attr("y2","0%");
+
+        linearGradient.append("stop")
+            .attr("offset","0%")
+            .attr("stop-color","blue");
+        linearGradient.append("stop")
+            .attr("offset", "100%")
+            .attr("stop-color", "red");
+        svg.append("rect")
+            //x,y 矩形的左上角坐标
+            .attr("x", 200)
+            .attr("y", 75) // 83为矩形的高
+            //矩形的宽高
+            .attr("width", 700)
+            .attr("height", 25)
+            //引用上面的id 设置颜色
+            .style("fill", "url(#" + linearGradient.attr("id") + ")");
+
+        svg.append("text")
+            .attr("x",190)
+            .attr("y",60)
+            .text("-26%")
+        svg.append("text")
+            .attr("x",880)
+            .attr("y",60)
+            .text("26%")
+        svg.append("text")
+            .attr("x",535)
+            .attr("y",60)
+            .text("0%")
+        svg.append("text")
+            .attr("x",200)
+            .attr("y",130)
+            .text("Difference in Employment between With and Without Dependent Children")
+
+    </script>
+
+
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="../scripts/children2.js" ></script>
+
+</html>

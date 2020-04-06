@@ -1,0 +1,65 @@
+html {
+    background-color: lightsteelblue;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 20px 20px 20px 20px;
+    border: 3px solid black;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+h3{
+    font-size: 26px;
+    text-align: left;
+}
+
+p,li {
+    color: black;
+    width: 1000px;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+#children_map{
+
+    //background-color: darkseagreen;
+}
+
+#colorscale{
+
+//background-color: darkseagreen;
+}
+
+#children_map2{
+
+    //background-color: pink;
+}
+path {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #222;
+}
+
+.grat {
+    stroke: #222;
+    stroke-dasharray: 4px;
+    stroke-width: 1px;
+    opacity: .5
+}
